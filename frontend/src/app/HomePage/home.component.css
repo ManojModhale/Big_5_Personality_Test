@@ -1,0 +1,257 @@
+body {
+    padding-top: 56px; /* Adjust based on your header height */
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 15px; /* Add space between the links */
+}
+
+.navbar-nav {
+    gap: 15px; /* Add space between the links */
+}
+
+.user-icon {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .center-links {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0; /* Add space between the collapsed links */
+    }
+
+    .user-icon {
+        margin-right: 5px;
+    }
+}
+
+/* <----------------------------------------------------------> */
+
+/* Custom styling */
+
+#a1{
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+  }
+  
+  .sub-heading {
+    color: #28a745;
+    margin-top: 20px;
+  }
+  
+  .description {
+    width: auto;
+    text-align: justify;
+    color: #6c757d;
+    font-weight: bold;
+  }
+  
+  /* Width adjustments */
+  .abc {
+    width: 55%;
+  }
+  
+  .pqr {
+    width: 45%;
+  }
+  
+  .pqr img{
+    height: 550px;
+  }
+  
+  .col-md-7 {
+    width: 100%; /* Allow text to occupy full width */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 767px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .abc,
+    .pqr {
+        width: 100%;
+    }
+  }
+
+
+/* footer section starts */
+.footer {
+    min-height: 120px; /* Adjust the height as per your preference */
+    padding-top: 1rem; /* Adjust the top padding as needed */
+    padding-bottom: 1rem; /* Add bottom padding for spacing */
+    background: rgb(0, 1, 43);
+  }
+  
+  .footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .box-container .box {
+    flex: 1 1 20rem; /* Adjust the width of each box */
+    margin: 1rem; /* Adjust the margin as needed for spacing between boxes */
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1rem;
+    color: #ccc;
+    padding: .7rem 0;
+    text-transform: none;
+  }
+  
+  .footer .box-container .box p i {
+    padding-right: 1rem;
+    color: #ffae00;
+  }
+  
+  .footer .box-container .box a {
+    font-size: 1rem;
+    color: rgb(238, 238, 238);
+    padding: .3rem 0;
+    display: block;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #ffae00;
+  }
+  
+  .footer .box-container .box .share {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    border-top: .1rem solid #fff3;
+  }
+  
+  .footer .credit a {
+    color: #ffae00;
+  }
+  
+  .footer .fa {
+    /* color: #E90606; */
+    /* margin: 0 .3rem; */
+    /* font-size: 1rem; */
+    
+    color: #E90606;
+    margin: 0 .3rem;
+    font-size: 2rem; /* Adjust the font size as needed */
+    padding: 0.5rem; /* Adjust padding for background space */
+    border-radius: 50%; /* Make the icons circular */
+    background-color: #fff; /* White background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s, background-color 0.3s;
+    animation: pound .35s infinite alternate;
+  }
+  
+  .footer .fa:hover {
+    color: #ffae00; /* Change the color on hover */
+    background-color: #fff; /* Change the background color on hover if desired */
+  }
+  
+  @-webkit-keyframes pound {
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes pound {
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media(max-width:450px) {
+    .footer .box-container .box {
+      margin: 0.5rem; /* Adjust margin for smaller screens */
+    }
+  
+    .footer .box-container .box p {
+      padding: 0.7rem;
+    }
+  
+    .footer .box-container .box .share a {
+      padding: 1.2rem;
+    }
+  }
+  
+  /* footer section ends */
+  /* common media queries starts*/
+  @media(max-width:450px) {
+    html {
+      font-size: 55%;
+    }
+  
+    body {
+      padding-right: 0;
+    }
+  
+    section {
+      padding: 2rem;
+    }
+  }
+  
+  /* common media queries ends*/
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-links {
+        margin-top: 10px;
+    }
+
+    .mx-auto {
+        margin-top: 10px;
+    }
+}
+
+.trait-section{
+    overflow-y: auto;
+}
+

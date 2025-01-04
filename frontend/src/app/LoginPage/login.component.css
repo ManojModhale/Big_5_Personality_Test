@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.body{
+    flex: 1;
+    height: 100%;
+     background-image: url('/assets/background4.avif');  
+    background-size: cover;
+    background-position: center;
+    /* background-color:rgb(42, 41, 41);
+     */
+     
+}
+
+.login-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f680;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    overflow: hidden;  
+    
+
+}
+
+ 
+.login-container h2 {
+    font-size: 28px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.login-container input::placeholder {
+    color: gray;
+    font-size: 15px;
+    font-family: Comic Sans MS;
+}
+
+.login-container .fa-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #050505; 
+    font-size: 18px;
+}
+
+.login-container .fa-icon-password {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #555; 
+    font-size: 18px;
+}
+
+.login-container .forgot-password,
+.login-container .new-user {
+    color: navy;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #a5cefa;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .login-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .login-container {
+        width: 50%;
+    }
+}
+
+.has-danger{
+    color: red;
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.has-success{
+    color: green;
+    font-size: 15px;
+    font-family: system-ui;
+}

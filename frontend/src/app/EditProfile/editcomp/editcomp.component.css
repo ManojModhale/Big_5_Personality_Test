@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding-top: 40px;
+    color: #2e323c;
+    background: #f5f6fa;
+    position: relative;
+    height: 100%;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 15px; /* Add space between the links */
+}
+
+.navbar-nav {
+    gap: 15px; /* Add space between the links */
+}
+
+.user-icon {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .center-links {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0; /* Add space between the collapsed links */
+    }
+
+    .user-icon {
+        margin-right: 5px;
+    }
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: hwb(0 100% 0%);
+    color: #424448; 
+    backdrop-filter: blur(8px);
+}
+
+.custom-card {
+    padding: 20px; /* Padding for inner content */
+    margin-top: 20px; /* Add margin for top spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:rgb(255, 255, 255)
+}
+
+
+.btn-secondary {
+    background-color: #6c757d; /* Change secondary button color */
+    border-color: #6c757d; /* Change secondary button border color */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Change primary button color */
+    border-color: #007bff; /* Change primary button border color */
+}
+
+/* Add spacing between buttons */
+.button-spacing {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-spacing .btn {
+    margin-left: 10px; /* Adjust margin between buttons */
+}
+
+
+.has-danger{
+    color: red;
+    font-size: 16px;
+    font-family: system-ui;
+}
+
+.has-success{
+    color: green;
+    font-size: 17px;
+    font-family: system-ui;
+}
+.body{
+    background-image: url('/assets/editprofile.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f680;
+    backdrop-filter: blur(5px);
+}
+

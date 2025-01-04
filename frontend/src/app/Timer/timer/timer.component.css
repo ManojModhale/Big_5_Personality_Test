@@ -1,0 +1,40 @@
+
+.card {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 130px;
+  text-align: center;
+  height: 3px;   
+}
+
+.display-1 {
+  font-size: 2rem; 
+  padding: 15px; 
+ background-color: rgb(249, 250, 251);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: none; 
+  background: #cce5ff; 
+}
+
+.display-1 span {
+  font-weight: bold; 
+  font-size: 1.5rem; 
+  color: #2f4f4f ;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.text-danger {
+  color: red;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main{
+    background:#f8f9fa;
+    
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 15px; /* Add space between the links */
+}
+
+.navbar-nav {
+    gap: 15px; /* Add space between the links */
+}
+
+.user-icon {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .center-links {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0; /* Add space between the collapsed links */
+    }
+
+    .user-icon {
+        margin-right: 5px;
+    }
+}
+
+  #main-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 80%;
+    width: 600px; /* Increased width */
+  }
+
+  #instruction {
+    margin-bottom: 20px;
+  }
+
+  #additional-instructions {
+    background-color: #f0f8ff;
+    padding: 20px; /* Increased padding */
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: justify; /* Justify text */
+  }
+
+  #start-btn {
+    cursor: default;
+  }
+
+  #start-btn:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    cursor: default;
+  }

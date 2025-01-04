@@ -1,0 +1,117 @@
+
+.main{
+  background:#ece5e5;
+  
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.question-container {
+  background-color: #ffffff;
+  /* background:#ece5e5; */
+  
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* Added position relative */
+}
+
+.options-container {
+  margin-top: 20px;
+}
+
+.question-container h2 {
+  
+  font-family: 'Verdana', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 15px;
+
+}
+
+.option-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.options-container label {
+  font-family: 'Arial', sans-serif;
+ 
+  font-size: 15px;
+ 
+}
+
+ 
+.form-check {
+  margin-bottom: 12px;
+}
+
+
+.form-check-input {
+  width: 18px; 
+  height: 18px; 
+  margin-top: 3px; 
+  margin-right: 8px; 
+  border: 2px solid #007bff; 
+  border-radius: 50%; 
+  transition: background-color 0.3s ease; 
+}
+
+
+.form-check-input:checked {
+  background-color: #007bff; 
+  border-color: #007bff; 
+}
+
+
+.option-label {
+  cursor: pointer; 
+}
+
+.option-label:hover {
+  text-decoration: underline; 
+}
+
+
+
+
+
+
+
+.next-button {
+  position: absolute;
+  bottom: 20px;
+  /* Adjusted bottom spacing */
+  right: 20px;
+  /* Adjusted right spacing */
+}
+
+app-timer {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 576px) {
+
+  /* Small screen adjustments */
+  .options-container {
+    margin-bottom: 50px;
+    /* Add space for the button */
+  }
+
+  .next-button {
+    position: static;
+    /* Change to static position on small screens */
+    margin-top: 20px;
+    /* Adjust top margin for spacing */
+  }
+}

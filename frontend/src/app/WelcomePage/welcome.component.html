@@ -1,0 +1,290 @@
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<!-- Angular Bootstrap (ng-bootstrap) CSS link (update the version to 16.0.0) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ng-bootstrap/ng-bootstrap@16.0.0/dist/ng-bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-dz6uYs9CzWczURaFLtMYQKnSkS9gzi00OkqJc3uqXJ15MMEfohjU1fbC2J7/dlDO" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <div class="project-name">Big 5 Personality Test</div>
+    </a>
+
+    <!-- Toggle button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/login" class="nav-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/newuser" class="nav-link"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Body with Carousel -->
+<div class="carousel-container mt-5" *ngIf="images">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-slide">
+          <div class="picsum-img-wrapper">
+            <img src="{{images[0]}}" alt="Random first slide" class="carousel-img" />
+            <div class="carousel-caption">
+              <!-- <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-slide">
+          <div class="picsum-img-wrapper">
+            <img src="{{images[1]}}" alt="Random second slide" class="carousel-img" />
+            <div class="carousel-caption">
+              <!-- <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-slide">
+          <div class="picsum-img-wrapper">
+            <img src="{{images[2]}}" alt="Random third slide" class="carousel-img" />
+            <div class="carousel-caption">
+              <!-- <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<br><br><br>
+
+<!-- Information about Website  -->
+
+<div class="col-md-12 text-center mb-4">
+  <h2 class="section-heading">Discover Your Personality with the Big Five Test</h2>
+</div>
+
+<div class="container" id="a1">
+  <div class="row">
+      <div class="col-md-6 pqr">
+          <img src="./assets/Images/F4.jpg" alt="placeholder" class="img-fluid">
+      </div>
+      <div class="col-md-6 abc" id="main-content">
+          <div class="col-md-7">
+              <p class="description">Welcome to our online guide to the Big Five Personality Test - a powerful tool for understanding and exploring the intricacies of your personality. Uncover the five key dimensions that shape who you are and gain valuable insights into your unique traits.</p>
+          </div>
+
+          <h3 class="sub-heading">Dive into the Big Five Dimensions:</h3>
+
+          <ol>
+              <li>
+                <h4>Openness to Experience:</h4>
+              </li>
+      
+              <li>
+                <h4>Conscientiousness:</h4>
+              </li>
+      
+              <li>
+                <h4>Extraversion:</h4>
+              </li>
+      
+              <li>
+                <h4>Agreeableness:</h4>
+              </li>
+      
+              <li>
+                <h4>Neuroticism (Emotional Stability):</h4>
+              </li>
+          </ol>
+
+          <div class="row dimensions">
+            <div class="col-md-7">
+                <h3 class="sub-heading">Take the Test:</h3>
+                <p class="description">Embark on your personal journey by taking the Big Five Personality Test. Click <a href="#" class="test-link">here</a> to discover your unique personality profile. It only takes a few minutes, and the results can be eye-opening!</p>
+            </div>
+        </div>
+
+        <div class="row dimensions">
+            <div class="col-md-7">
+                <h3 class="sub-heading">Practical Applications:</h3>
+                <p class="description applications">Explore how understanding your personality can impact your life. From career choices to relationships, learn how your traits influence various aspects of your daily experiences.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- About Us -->
+<div class="about-us" id="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mb-4">
+        <h2 class="section-heading">Meet Our Team</h2>
+      </div>
+      <div class="about-us-section d-flex justify-content-center flex-wrap">
+        <div class="about-card">
+          <img src="./assets/Images/P1.jpeg" alt="Faiz" class="about-img">
+          <h3>Mohammad Faiz</h3>
+          <p>B.E (CS)</p>
+          <p>7558558775</p>
+        </div>
+        <div class="about-card">
+          <img src="./assets/Images/P1.jpeg" alt="Photo 2" class="about-img">
+          <h3>Manoj Modhale</h3>
+          <p>BCS</p>
+          <p>9011541173</p>
+        </div>
+        <div class="about-card">
+          <img src="./assets/Images/P2.jpeg" alt="Photo 3" class="about-img">
+          <h3>Bhagyashree Katkamwar</h3>
+          <p>B Tech</p>
+          <p>8830152896</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+
+ <!-- contact section starts -->
+ <section class="contact" id="contact ">
+
+  <h2 class="heading" id="contact-us"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/Images/contact1.png" alt="">
+      </div>
+      <form  method="POST">
+
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="Name" placeholder="Name" required>
+            <!-- <i class='fas fa-user'></i> -->
+          </div>
+          <div class="field">
+            <input type="text" name="Email" placeholder="Email" required>
+            <!-- <i class='fas fa-envelope'></i> -->
+          </div>
+          <div class="field">
+            <input type="text" name="Phone" placeholder="Phone">
+            <!-- <i class='fas fa-phone-alt'></i> -->
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="Message" required></textarea>
+            <!-- <i class="fas fa-comment-dots"></i> -->
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+
+
+ <!-- footer section starts -->
+ <section class="footer">
+
+  <div class="box-container">
+
+    <div class="box">
+      <h3>Big5 Personality Test</h3>
+      <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Please wait for a while all major projects will be listed soon. Till then keep visiting. Connect with me over live chat!</p>
+    </div>
+
+    <div class="box">
+      <h3>Quick links</h3>
+      <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+      <a href="#about-us"><i class="fas fa-chevron-circle-right"></i> About</a>
+      <a href="#contact-us"><i class="fas fa-chevron-circle-right"></i> Contact-Us</a>
+      <!-- <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+      <a href="#work"><i class="fas fa-chevron-circle-right"></i> Work</a>
+      <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a> -->
+    </div>
+
+    <div class="box">
+      <h3>contact info</h3>
+
+      <p> <i class="fas fa-envelope"></i>manojmodhale2001&#64;gmail.com</p>
+      <p> <i class="fas fa-map-marked-alt"></i>Pune, India-411037</p>
+      <div class="share">
+        <a href="https://www.linkedin.com/in/manoj-modhale-b28160206/" class="fa-brands fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/ManojModhale " class="fab fa-github" target="_blank"></a>
+        <a href="manojmodhale2001@gmail.com" class="fas fa-envelope" target="_blank"></a>
+        <!-- <a href="https://www.linkedin.com/in/mohammad-faiz-3594601bb/" class="fab fa-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Faiz2111" class="fab fa-github" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:hfaiz2111@gmail.com" class="fas fa-envelope" target="_blank"><i class="fas fa-envelope"></i></a> -->
+      </div>
+    </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/manoj-modhale-b28160206/"> Manoj Modhale</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+
+<!-- Bootstrap JS and Popper.js scripts (for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+ <!-- Popper.js (update the version to 2.11.8) -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+ <!-- jQuery (update the version to 3.7.1) -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <!-- Bootstrap JS (update the version to 5.3.2) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+ <!-- Angular Bootstrap (ng-bootstrap) JS (update the version to 16.0.0) -->
+ <script src="https://cdn.jsdelivr.net/npm/@ng-bootstrap/ng-bootstrap@16.0.0/dist/ng-bootstrap.min.js"></script>
+
+ <!-- Add this at the end of your body tag -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-uV+CmOQpC7ZH1vNO+XHVL8ZomlFy4qQHDF/dTV3tczyuFw4YbhU1mN47neX2G9KP" crossorigin="anonymous"></script>
+

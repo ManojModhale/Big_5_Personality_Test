@@ -1,0 +1,43 @@
+.carousel-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: auto;
+  }
+
+  .carousel-slide {
+    text-align: center;
+  }
+
+  .picsum-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .picsum-img-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+    color: #fff; /* Adjust the text color as needed */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #333; /* Change the color of the control icons */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(100%); /* Invert the color of the arrows for better visibility */
+  }

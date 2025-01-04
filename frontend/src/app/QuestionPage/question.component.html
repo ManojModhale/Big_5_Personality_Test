@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+<div class="main">
+<app-timer  *ngIf="showTimer"></app-timer>
+<br><br><br>
+<div class="container mt-5">
+  <div *ngIf="currentQuestion">
+    <div class="question-container bg-white p-4 rounded shadow">
+      <h2><strong>{{ currentQuestion.id }} . </strong>{{ currentQuestion.questionText }}</h2>
+      
+      <div class="options-container mt-3">
+      <div [ngSwitch]="currentQuestion.questionType">
+
+        <ng-container *ngSwitchCase="'positive'">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="stronglyDisagree"  value="1" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="stronglyDisagree">
+              Strongly Disagree
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="disagree"  value="2" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="disagree">
+              Disagree
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="neutral" value="3" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="neutral">
+              Neutral
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="agree" value="4" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="agree">
+              Agree
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="stronglyAgree" value="5" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="stronglyAgree">
+              Strongly Agree
+            </label>
+          </div>
+        </ng-container>
+
+        <ng-container *ngSwitchCase="'negative'">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="stronglyDisagree"  value="5" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="stronglyDisagree">
+              Strongly Disagree
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="disagree"  value="4" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="disagree">
+              Disagree
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="neutral" value="3" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="neutral">
+              Neutral
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="agree" value="2" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="agree">
+              Agree
+            </label>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" id="stronglyAgree" value="1" (change)="selectOption($event)">
+            <label class="form-check-label option-label" for="stronglyAgree">
+              Strongly Agree
+            </label>
+          </div>
+        </ng-container>
+
+
+      </div>
+      </div>
+
+      <button class="btn btn-lg btn-success next-button" *ngIf="currentQuestion.id<20" (click)="onButtonClick()">Next</button>
+      <button class="btn btn-primary next-button" *ngIf="currentQuestion.id==20" (click)="submitResponses()">Submit</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>

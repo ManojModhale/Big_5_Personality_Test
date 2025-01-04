@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+<div class="main">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Big 5 Personality Test</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse center-links" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" routerLink="/exam">Exam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" routerLink="/dashboard">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ml-auto">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle user-icon" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle fa-lg"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" routerLink="/profile">Profile</a>
+                        <a class="dropdown-item" routerLink="/editprofile">Edit Profile</a>
+                        <a class="dropdown-item" routerLink="/logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="main-container" class="container">
+    <div id="instruction">
+        <h2 class="text-center">Exam Instructions</h2>
+        <p class="text-center">This is a sample exam. Please read the instructions carefully before starting the exam.</p>
+    </div>
+
+    <div id="additional-instructions">
+      <h3>General News and Announcements</h3>
+      <ol>
+        <li>There are 20 Questions respective to Personality Traits</li>
+        <li>Your respective exam will be for 2 min & 30 seconds .</li>
+        <li>There will be 5 Answer options, you must have to select anyone of them.</li>
+        <li>After time ends exam will be automatically ends.</li>
+        <li>after exam you will be redirected to Dashboard Page, where your all tests score result will be displayed. </li>
+        <li>Your current Exam Result will be sent on your registered email with score points and some message comments.</li>
+        <li>Write sheet number in the top right corner of the answer sheet.</li>
+        <li>The exam will be conducted in proctored mode hence please make sure that your Webcam is working correctly.</li>
+        <li>Make sure your webcam is continuously ON.</li>
+        <li>Your internet connection must be strong to complete the exam.</li>
+      </ol>
+    </div>
+    
+    <div class="form-check text-center">
+      <input type="checkbox" class="form-check-input" id="read-instructions" [(ngModel)]="isCheckboxChecked" name="readInstructions"
+       required #readInstructions="ngModel">
+      <label class="form-check-label" for="read-instructions">I have read all the instructions</label>
+    </div>
+
+    <div class="text-center mt-3">
+        <button id="start-btn" class="btn btn-info"  [disabled]="!isCheckboxChecked" (click)="startExam()">Start Exam</button>
+    </div>
+
+  </div>
+</div>
+  <!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  

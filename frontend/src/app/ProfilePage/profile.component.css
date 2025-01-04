@@ -1,0 +1,63 @@
+body{margin-top:20px;}
+.avatar{
+width:200px;
+height:200px;
+}	
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 15px; /* Add space between the links */
+}
+
+.navbar-nav {
+    gap: 15px; /* Add space between the links */
+}
+
+.user-icon {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .center-links {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0; /* Add space between the collapsed links */
+    }
+
+    .user-icon {
+        margin-right: 5px;
+    }
+}
+
+.profile-container {
+padding-top: 70px; 
+
+}
+
+
+.body{
+     background-image: url('/assets/profile.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+}
+
+
+.card{
+    /* background-color: beige; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:rgb(245, 242, 242);
+    backdrop-filter: blur(5px);
+}
+  
