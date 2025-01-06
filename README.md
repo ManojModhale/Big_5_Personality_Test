@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Big 5 Personality Test** is an online tool that allows users to evaluate their personality based on the Five-Factor Model (FFM). The test measures five key personality traits:
+**Big 5 Personality Test** is an Personality Assessment Platform that allows users to evaluate their personality based on the Five-Factor Model (FFM). The test measures five key personality traits:
 
 - **Openness**: Appreciation for art, emotion, adventure, and unusual ideas.
 - **Conscientiousness**: Tendency to be organized, dependable, and disciplined.
